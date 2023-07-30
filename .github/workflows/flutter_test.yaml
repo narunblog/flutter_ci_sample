@@ -36,7 +36,7 @@ jobs:
       # コードフォーマットを実行
       # フォーマットの結果変更が発生した場合はエラー扱いにする
       - name: Run Flutter format
-        run: flutter format --set-exit-if-changed .
+        run: dart format --set-exit-if-changed .
       # 静的解析を実行
       - name: Run Flutter Analyze
         run: flutter analyze
