@@ -33,6 +33,9 @@ jobs:
       # flutter pub get を実行
       - name: Install Flutter dependencies
         run: flutter pub get
+      # 静的解析を実行
+      - name: Run Flutter Analyze
+        run: flutter analyze
       # テストを実行
       # あとでテスト結果を GitHub Actions 上に表示するので log に出力する
       # あとでカバレッジ結果をCodecovに送信するのでカバレッジありで実行する
